@@ -37,6 +37,9 @@ public class Room {
                     this.switchLight();
                     break;
                 case 2:
+                    if (Thread.currentThread().getStackTrace().length > 4) {
+                        System.out.println("Returning to previous room.\n");
+                    }
                     return;
                 case 3:
                     this.printNeighbours();
