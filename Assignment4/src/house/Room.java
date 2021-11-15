@@ -27,6 +27,7 @@ public class Room {
 
     public void enter() {
         while (true) {
+
             this.printFeatures();
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
@@ -42,6 +43,17 @@ public class Room {
                     int room = sc.nextInt() - 1;
                     this.neighbours.get(room).enter();
                     break;
+                case 4:
+                    if (this.name.equals("Kitchen")){
+                        Kitchen kitchen = (Kitchen)this;
+                        kitchen.switchStove();
+                    }
+                    else if (this.name.equals("Bathroom")){
+                        Bathroom bathroom = (Bathroom)this;
+                        bathroom.switchShower();
+                    }
+                    break;
+
                 default:
                     System.out.println("Wrong choice");
                     break;
