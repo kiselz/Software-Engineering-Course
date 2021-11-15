@@ -1,10 +1,17 @@
+/*Group AG 0908
+Makar Utochkin 108019266937
+Aleksandr Kiselev 108020240073
+Duong Viet Anh 108020258416
+*/
+
 package house;
 
-import java.util.Scanner;
 
+//class bathroom is a child-class of Room
 public class Bathroom extends Room {
+    //fields
     public boolean shower;
-
+    //constructor
     public Bathroom(String name, boolean lighting) {
         super(name, lighting);
         this.shower = false;
@@ -14,12 +21,12 @@ public class Bathroom extends Room {
         super(name, lighting);
         this.shower = shower;
     }
-
+    //shower swithcer
     public void switchShower() {
         super.printSwitch("shower", this.shower);
         this.shower = !this.shower;
     }
-
+    //overrrided methods
     @Override
     public void printFeatures() {
         super.printFeatures();
