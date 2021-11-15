@@ -32,31 +32,4 @@ public class Kitchen extends Room {
             System.out.println("Warning: Stove in the " + name + " is still switched on");
         }
     }
-    @Override
-    public void enter() {
-        while (true) {
-            this.printFeatures();
-            Scanner sc = new Scanner(System.in);
-            int choice = sc.nextInt();
-
-            switch (choice) {
-                case 1:
-                    this.switchLight();
-                    break;
-                case 2:
-                    return;
-                case 3:
-                    this.printNeighbours();
-                    int room = sc.nextInt() - 1;
-                    this.neighbours.get(room).enter();
-                    break;
-                case 4:
-                    this.switchStove();
-                    break;
-                default:
-                    System.out.println("Wrong choice");
-                    break;
-            }
-        }
-    }
 }
