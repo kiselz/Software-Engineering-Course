@@ -21,6 +21,7 @@ public class Apartment {
             room.checkFeatures();
 
         }
+        System.out.println("Leaving apartment");
     }
     public void extension(Room... newRooms) {
         for (Room newRoom: newRooms) {
