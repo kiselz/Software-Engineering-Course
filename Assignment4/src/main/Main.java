@@ -10,8 +10,8 @@ public class Main {
         Room hallway = new Room("Hallway", false);
         Room workroom = new Room("Workroom", false);
         Room bedroom = new Room("Bedroom", false);
-        Room kitchen = new Kitchen("house.Kitchen", false);
-        Room bathroom = new Bathroom("house.Bathroom", false);
+        Room kitchen = new Kitchen("Kitchen", false);
+        Room bathroom = new Bathroom("Bathroom", false);
 
         hallway.addNeighbours(workroom, bedroom, kitchen, bathroom);
         workroom.addNeighbours(bedroom);
