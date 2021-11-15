@@ -37,6 +37,7 @@ public class Room {
                     this.switchLight();
                     break;
                 case 2:
+                    // If we are leaving from the apartment's entrance then it should be not printed
                     if (Thread.currentThread().getStackTrace().length > 4) {
                         System.out.println("Returning to previous room.\n");
                     }
