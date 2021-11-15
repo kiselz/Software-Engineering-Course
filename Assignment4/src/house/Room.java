@@ -85,6 +85,3 @@ public class Room {
         return this.name;
     }
 }
-
-
-ti pidr
