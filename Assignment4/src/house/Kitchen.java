@@ -1,3 +1,7 @@
+package house;
+
+import house.Room;
+
 public class Kitchen extends Room {
     public boolean stove;
 

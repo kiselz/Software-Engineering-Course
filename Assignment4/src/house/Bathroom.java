@@ -1,3 +1,5 @@
+package house;
+
 public class Bathroom extends Room {
     public boolean shower;
 

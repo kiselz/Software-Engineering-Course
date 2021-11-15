@@ -1,3 +1,5 @@
+package house;
+
 import java.util.HashMap;
 
 public class Apartment {
